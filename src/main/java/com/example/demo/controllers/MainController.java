@@ -14,10 +14,7 @@ public class MainController {
     AdminRepo adminRepo;
     @GetMapping
     public String getMainPage(){
-        Admins admins = new Admins();
-        admins.setName("admin");
-        admins.setPassword("admin");
-        adminRepo.save(admins);
+
         return "index";
     }
 }
