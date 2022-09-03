@@ -25,5 +25,6 @@ public class Users {
     @Column (name = "password")
     String password;
 
-
+    @Column(name = "role")
+    String role;
 }
