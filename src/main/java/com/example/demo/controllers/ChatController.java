@@ -30,7 +30,7 @@ public class ChatController {
     @PostMapping
     public RedirectView getChatM(@RequestParam String text){
         Message message = new Message();
-        message.setAdminId(1);
+        message.setAdminId(0);
         message.setId(10);
             message.setText(text + " by user");
 
