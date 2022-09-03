@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping ("/")
-public class MainController {
+@RequestMapping("/callback")
+public class CallbackController {
     @GetMapping
-    public String getMainPage(){
-        return "index";
+    public String getCallback(){
+        return ("callback");
     }
 }
