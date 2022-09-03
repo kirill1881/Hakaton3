@@ -16,13 +16,7 @@ public class MainController {
     UserRepo userRepo;
     @GetMapping
     public String getMainPage(){
-        Users users = new Users();
-        users.setName("admin");
-        users.setLastname("admin");
-        users.setEmail("admin");
-        users.setPassword("admin");
-        users.setRole("admin");
-        userRepo.save(users);
+
         return "index";
     }
 }
